@@ -206,9 +206,9 @@ template <class ValType> // скалярное произведение
 ValType TVector<ValType>::operator*(const TVector<ValType> &v)
 {
 	if (Size != v.Size) throw("Vectors size not equal");
-	TVector<ValType> Res(*this);
+	ValType Res = 0;
 	for (int i = 0; i < Size; i++)
-		Res.pVector[i] = pVector[i] * v.pVector[i];
+		Res += pVector[i] * v.pVector[i];
 
 	return Res;
 } /*-------------------------------------------------------------------------*/

@@ -206,7 +206,7 @@ TEST(TVector, cant_subtract_vectors_with_not_equal_size)
 	TVector<int> v1(4), v2(5);
 	ASSERT_ANY_THROW(v1 - v2);
 }
-/*
+
 TEST(TVector, can_multiply_vectors_with_equal_size)
 {
 	TVector<int> v1(4), v2(4);
@@ -224,4 +224,4 @@ TEST(TVector, cant_multiply_vectors_with_not_equal_size)
 	TVector<int> v1(4), v2(5);
 	ASSERT_ANY_THROW(v1 * v2);
 }
-*/
+
